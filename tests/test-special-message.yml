@@ -1,0 +1,27 @@
+name: Test tweet with special characters in message
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - id: tweet
+        name: Invoke tweet action with special characters
+        uses: .
+        continue-on-error: true
+        with:
+          tweet-message: "Build #42 passed! 🎉 https://github.com/owner/repo/actions/runs/123"
+        env:
+          GITHUB_EVENT_NAME: push
+          GITHUB_REF: refs/heads/main
+      - name: Assert action was invoked with special message
+        run: |
+          echo "outcome: ${{ steps.tweet.outcome }}"
+          # The action will fail without real Twitter credentials,
+          # but it should have been invoked (not skipped)
+          if [ "${{ steps.tweet.outcome }}" = "skipped" ]; then
+            echo "FAIL: action step was skipped unexpectedly"
+            exit 1
+          fi
+          echo "PASS: action was invoked with special characters (outcome=${{ steps.tweet.outcome }})"

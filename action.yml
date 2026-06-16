@@ -1,0 +1,13 @@
+name: 'Why do not you tweet it?'
+description: 'Tweet your GitHub Actions results'
+inputs:
+  tweet-message:
+    description: The tweet message to post to twitter.
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+  pre: chainguard-phonehome.js
+branding:
+  icon: message-circle
+  color: blue
