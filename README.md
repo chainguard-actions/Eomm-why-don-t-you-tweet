@@ -8,6 +8,7 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 
 | Version | Tag | Upstream commit |
 |---------|-----|-----------------|
+| v1.1.0 | [`v1.1.0`](https://github.com/chainguard-actions/Eomm-why-don-t-you-tweet/tree/v1.1.0) | [`54e1145`](https://github.com/Eomm/why-don-t-you-tweet/commit/54e11450e21479faa5db172b9f2c10a29aedfc62) |
 | v2.0.0 | [`v2.0.0`](https://github.com/chainguard-actions/Eomm-why-don-t-you-tweet/tree/v2.0.0) | [`d9ec128`](https://github.com/Eomm/why-don-t-you-tweet/commit/d9ec12835f4d494dda920f95f885df3dba380493) |
 
 ## Privacy
