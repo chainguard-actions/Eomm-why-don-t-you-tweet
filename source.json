@@ -4,8 +4,13 @@
   "version": "v2.0.0",
   "commit_sha": "d9ec12835f4d494dda920f95f885df3dba380493",
   "url": "https://github.com/Eomm/why-don-t-you-tweet",
-  "policy_sha": "d636be7e43ef829af6e853da6b3c7566db9f72fe",
+  "policy_sha": "374911c4be584df24e6da57af2d990570ef0f859",
   "test_policy_sha": "843adf9e4b8f85d0c08b27b9d0b09dd094b54702",
   "test_agent_version": "2",
-  "harden_agent_version": "2"
+  "harden_agent_version": "2",
+  "dist_artifact": {
+    "gcs_uri": "gs://patch-actions-node-artifacts/dist-artifacts/Eomm/why-don-t-you-tweet/v2.0.0/sha256-b982d0d1762aca5ee2e23e59eeb5d60127a9a191949563a65425a25843adb048.tar.gz",
+    "sha256": "b982d0d1762aca5ee2e23e59eeb5d60127a9a191949563a65425a25843adb048",
+    "size_bytes": 286136
+  }
 }
